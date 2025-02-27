@@ -31,12 +31,12 @@ require "db_connect.php";
                             <p class='text-gray-600 text-sm'>Lager: {$row['lagerkvantitet']}</p>
                             
                             <!-- Knapp for å legge til i handlekurven -->
-                            <form method='post' action='handlekurv.php'>
+                            <form method='post' action='handlekurv_vis.php'>
                                 <input type='hidden' name='produkt_id' value='{$row['produkt_id']}'>
                                 <input type='hidden' name='navn' value='{$row['namn']}'>
                                 <input type='hidden' name='pris' value='{$row['pris']}'>
                                 <button type='submit' class='mt-3 bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 w-full'>
-                                    Kjøp No!!!
+                                    Legg til i handelkurv
                                 </button>
                             </form>
                           </div>";
